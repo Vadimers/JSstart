@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Три JavaScript Завдання</h1>
+
+    <!-- Завдання 1: getRandomInt -->
+    <div class="task">
+        <h2>Завдання 1: Випадкове число</h2>
+        <p>Генерація випадкового числа в заданому діапазоні</p>
+        <button onclick="showRandom(1, 10)">Від 1 до 10</button>
+        <button onclick="showRandom(40, 50)">Від 40 до 50</button>
+        <button onclick="showRandom(1, 100)">Від 1 до 100</button>
+        <div id="randomResult" class="result"></div>
+    </div>
+
+    <!-- Завдання 2: sumBigIntegers -->
+    <div class="task">
+        <h2>Завдання 2: Сума великих чисел</h2>
+        <p>Додавання двох великих чисел (BigInt)</p>
+        <button onclick="showBigIntSum()">9007199254740991 + 9007199254740991</button>
+        <div id="bigIntResult" class="result"></div>
+    </div>
+
+    <!-- Завдання 3: greet -->
+    <div class="task">
+        <h2>Завдання 3: Привітання</h2>
+        <p>Створення рядка привітання</p>
+        <button onclick="showGreet('Hi', 'John')">Hi, John</button>
+        <button onclick="showGreet('Hey', 'Bob')">Hey, Bob</button>
+        <button onclick="showGreet('Hello', 'Mary')">Hello, Mary</button>
+        <div id="greetResult" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
