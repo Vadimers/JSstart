@@ -5,8 +5,9 @@ function getRandomInt(min, max) {
 
 function showRandom(min, max) {
     const result = getRandomInt(min, max);
-    document.getElementById('randomResult').textContent = 
-        `Випадкове число від ${min} до ${max}: ${result}`;
+    const output = `Випадкове число від ${min} до ${max}: ${result}`;
+    document.getElementById('randomResult').textContent = output;
+    console.log(output); 
 }
 
 // Завдання 2: Функція для суми великих чисел
@@ -16,8 +17,9 @@ function sumBigIntegers(numStr1, numStr2) {
 
 function showBigIntSum() {
     const result = sumBigIntegers('9007199254740991', '9007199254740991');
-    document.getElementById('bigIntResult').textContent = 
-        `Результат: ${result}`;
+    const output = `Результат: ${result}`;
+    document.getElementById('bigIntResult').textContent = output;
+    console.log(output); 
 }
 
 // Завдання 3: Функція привітання
@@ -27,6 +29,7 @@ function greet(msg, name) {
 
 function showGreet(msg, name) {
     const result = greet(msg, name);
-    document.getElementById('greetResult').textContent = 
-        `Результат: ${result}`;
+    const output = `Результат: ${result}`;
+    document.getElementById('greetResult').textContent = output;
+    console.log(output); 
 }
